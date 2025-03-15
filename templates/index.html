@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Classifier</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>AI-Powered Image Classifier</h1>
+        <p>Upload an image to classify objects such as cars, trucks, and more!</p>
+        <input type="file" id="imageUpload" accept="image/*">
+        <div id="imagePreview"></div>
+        <button id="classifyBtn">Classify Image</button>
+        <p id="result"></p>
+    </div>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
